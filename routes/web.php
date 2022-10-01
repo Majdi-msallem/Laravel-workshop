@@ -33,6 +33,7 @@ Route::get('/page3/{id?}', function ($id=null) {
 Route::get('/home', [\App\Http\Controllers\HomeController::class,'index']);
 Route::get('/show/{name}', [\App\Http\Controllers\HomeController::class , 'show'] );
 Route::get('/form', [\App\Http\Controllers\HomeController::class,'form']);
+Route::get('/register', [\App\Http\Controllers\HomeController::class,'register']);
 
 
 //middleware
